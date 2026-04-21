@@ -4,7 +4,7 @@ from rich.table import Table
 
 
 def header(text):
-    print(Panel(text.center(30), width=40))
+    print(Panel(text.center(30), width=35, style="cyan"))
 
 
 def success(msg):
@@ -16,7 +16,7 @@ def error(msg):
 
 
 def menu():
-    header("SERVICEFLOW")
+    header("SERVICE FLOW")
     print("1. Show Customers")
     print("2. Register Customer")
     print("3. Delete Customer")
@@ -24,7 +24,7 @@ def menu():
     print("5. Search Customer")
     print("6. Total Revenue")
     print("7. Exit")
-    print("-" * 40)
+    print("-" * 35)
 
 
 def show_table(data):
